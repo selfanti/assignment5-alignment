@@ -1,10 +1,10 @@
 *.bin
-models/
-data/
+model/
+data/sft-cs336-assign5-datasets/
 
 nav
 tags
-
+flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp312-cp312-linux_x86_64.whl
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
