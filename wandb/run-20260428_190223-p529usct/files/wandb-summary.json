@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":257},"train_step":1,"_runtime":248.8059515,"train/avg_kl_div":0.3791188597679138,"gen/answer_accuracy":0.544,"gen/total":1000,"_step":1,"gen/format_accuracy":0.918,"train/epoch":0.064,"_timestamp":1.7773743923429153e+09,"train/distill_loss":7.041207313537598}

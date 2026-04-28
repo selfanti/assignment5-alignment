@@ -1,0 +1,1 @@
+{"eval_vllm/format_reward":0.386,"_runtime":166.161292788,"train/epoch":3,"train/avg_log_prob":-0.578125,"_step":6,"eval_vllm/answer_reward":0.086,"train/global_step":6,"_timestamp":1.7767810253229816e+09,"eval_vllm/accuracy":0.086,"train/loss":6.4375,"train/epoch_loss":7.6865234375,"eval_vllm/reward":0.086,"_wandb":{"runtime":166}}

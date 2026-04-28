@@ -1,0 +1,1 @@
+{"eval_vllm/answer_reward":0.292,"_wandb":{"runtime":176},"train/epoch":3,"train/global_step":24,"eval_vllm/reward":0.292,"train/loss":3.1875,"train/avg_log_prob":-0.43359375,"_step":24,"_timestamp":1.7767777376505294e+09,"train/epoch_loss":4.84149169921875,"_runtime":176.684380386,"eval_vllm/format_reward":0.79,"eval_vllm/accuracy":0.292}

@@ -1,0 +1,6 @@
+{
+  "num_examples": 5000,
+  "format_reward": 0.1674,
+  "answer_reward": 0.0272,
+  "reward": 0.0272
+}

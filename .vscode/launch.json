@@ -1,0 +1,49 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "AladdinEdu 远程：Python 文件",
+            "type": "aladdin-remote-python",
+            "request": "attach",
+            "image": "aladdin-registry.hd-01.alayanew.com:8443/aladdin/torch:2.6.0-cu124",
+            "python": "python3",
+            "cwd": "${workspaceFolder}",
+            "program": "${file}",
+            "env": {},
+            "args": [],
+            "resource": {
+                "cpu": "2",
+                "mem": "8Gi",
+                "gpu": {},
+                "ephemeralStorage": "32Gi"
+            },
+            "setupCommand": ""
+        },
+
+        {
+            "name": "Python 调试程序: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+        "name": "Pytest: 单函数调试",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "pytest",
+        "args": [
+            "-v",
+            "-s",
+            "${file}::test_sft_microbatch_train_step"
+        ],
+        "console": "integratedTerminal",
+        "justMyCode": false
+        },
+        
+    ]
+}

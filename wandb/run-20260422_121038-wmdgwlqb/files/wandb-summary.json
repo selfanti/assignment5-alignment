@@ -1,0 +1,1 @@
+{"train/epoch":3,"_step":51,"train/avg_log_prob":-0.64453125,"_timestamp":1.7768314011689844e+09,"eval/format_reward":0.442,"train/epoch_loss":6.520751953125,"train_step":24,"eval_step":25,"eval/accuracy":0.102,"_wandb":{"runtime":362},"_runtime":362.42628121,"eval/answer_reward":0.102,"eval/reward":0.102,"train/loss":8.875}
