@@ -22,7 +22,7 @@ from cs336_alignment.drgrpo_grader import r1_zero_reward_fn
 # ---------------------------------------------------------------------------
 MATH_VALIDATION_PATH = "/root/assignment5-alignment-main/data/sft-cs336-assign5-datasets/sft-reason/val.jsonl"
 R1_ZERO_PROMPT_PATH = "/root/assignment5-alignment-main/cs336_alignment/prompts/r1_zero.prompt"
-MODEL_PATH = "/root/assignment5-alignment-main/model"
+MODEL_PATH = "/root/assignment5-alignment-main/sft_outputs/sft_size_full"
 OUTPUT_PATH = "math_evaluation_results.jsonl"
 
 # Load the r1_zero prompt template once at module import.

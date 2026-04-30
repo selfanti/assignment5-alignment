@@ -540,7 +540,7 @@ def main():
     parser.add_argument("--eval_steps", type=int, default=1)
     parser.add_argument("--distill_temperature", type=float, default=2.0,
                         help="Temperature for softening teacher/student distributions.")
-    parser.add_argument("--kl_mode", type=str, default="reverse", choices=["forward", "reverse"],
+    parser.add_argument("--kl_mode", type=str, default="forward", choices=["forward", "reverse"],
                         help="KL divergence mode: forward (KL(teacher||student)) or reverse (KL(student||teacher)).")
     parser.add_argument("--teacher_microbatch", type=int, default=2,
                         help="Micro-batch size for teacher forward passes on cuda:1.")
