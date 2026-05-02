@@ -4,7 +4,7 @@ data/sft-cs336-assign5-datasets/
 qwen2.5_1_5B/
 qwen2.5_14B/
 sft_outputs/
-
+grpo_outputs/
 nav
 tags
 flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp312-cp312-linux_x86_64.whl
