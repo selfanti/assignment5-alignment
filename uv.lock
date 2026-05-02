@@ -155,7 +155,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "accelerate", specifier = ">=1.5.2" },
-    { name = "alpaca-eval", directory = "/root/tmp/alpaca_eval/alpaca_eval" },
+    { name = "alpaca-eval", directory = "alpaca_eval" },
     { name = "flash-attn", path = "flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp312-cp312-linux_x86_64.whl" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "math-verify", extras = ["antlr4-13-2"], specifier = ">=0.7.0" },
@@ -174,7 +174,7 @@ requires-dist = [
 [[package]]
 name = "alpaca-eval"
 version = "0.6.2"
-source = { directory = "/root/tmp/alpaca_eval/alpaca_eval" }
+source = { directory = "alpaca_eval" }
 dependencies = [
     { name = "datasets", version = "2.14.4", source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }, marker = "sys_platform != 'darwin'" },
     { name = "datasets", version = "4.8.4", source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }, marker = "sys_platform == 'darwin'" },

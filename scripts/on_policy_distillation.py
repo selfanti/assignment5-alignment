@@ -307,8 +307,8 @@ def token_level_KL(
     Parameters
     ----------
     mode : str
-        "forward"  -> KL(teacher || student)  (mode-seeking, standard KD)
-        "reverse"  -> KL(student || teacher)  (mean-seeking, covers all modes)
+        "forward"  -> KL(teacher || student)  (mean-seeking, standard KD)
+        "reverse"  -> KL(student || teacher)  (mode-seeking)
     """
     # Align vocab sizes (student may have smaller vocab than teacher config)
     vocab_size = min(student_logits.size(-1), teacher_logits.size(-1))
@@ -328,7 +328,8 @@ def token_level_KL(
         # Reverse KL = sum_t p_s * (log p_s - log p_t)
         # Gradient equivalent to: -sum_t p_s * log p_t
         s_probs = s_log_probs.exp()
-        token_loss = -(s_probs * t_log_probs).sum(dim=-1)  # [B, L]
+        # 正确版：包含 -H(S) 的约束
+        token_loss = (s_probs * (s_log_probs - t_log_probs)).sum(dim=-1)  # [B, L]
 
     loss = (token_loss * mask).sum() / mask.sum().clamp(min=1)
 

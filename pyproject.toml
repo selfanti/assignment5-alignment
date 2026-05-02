@@ -33,7 +33,7 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 default = true
 
 [tool.uv.sources]
-alpaca-eval = { path = "/root/tmp/alpaca_eval/alpaca_eval" }
+alpaca-eval = { path = "alpaca_eval" }
 flash-attn = { path = "flash_attn-2.7.4.post1+cu12torch2.5cxx11abiFALSE-cp312-cp312-linux_x86_64.whl" }
 
 [tool.pytest.ini_options]
