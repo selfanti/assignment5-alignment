@@ -329,7 +329,7 @@ def token_level_KL(
         # Gradient equivalent to: -sum_t p_s * log p_t
         s_probs = s_log_probs.exp()
         # 正确版：包含 -H(S) 的约束
-        token_loss = (s_probs * (s_log_probs - t_log_probs)).sum(dim=-1)  # [B, L]
+        token_loss =- (s_probs * (t_log_probs - s_log_probs)).sum(dim=-1)  # [B, L]
 
     loss = (token_loss * mask).sum() / mask.sum().clamp(min=1)
 
